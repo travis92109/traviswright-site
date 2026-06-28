@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travis Wright — Brand Advisor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!--
+  ============================================================
+  HOW TO EDIT THE TEXT ON THIS SITE
+  ============================================================
+  All the words on this site live in the SITE_CONTENT block
+  below. Find the line you want to change, edit the text
+  between the quotes " ", and save the file.
+
+  RULES TO AVOID BREAKING THE PAGE:
+  1. Only edit text BETWEEN double quotes " "
+  2. Never delete a quote mark, comma, or curly brace { }
+  3. If a word itself needs a quote mark in it (rare), use
+     a straight apostrophe like don't — that's already safe.
+     Avoid typing a double-quote " character inside the text.
+  4. After editing, just open the file in a browser to check
+     it still looks right before using it live.
+
+  Everything below this comment block (the <style> and the
+  HTML layout) controls how the site LOOKS, not what it SAYS.
+  You shouldn't need to touch any of that for a text change.
+  ============================================================
+-->
+<script>
+  const SITE_CONTENT = {
+
+    nav: {
+      logoFirst: "TRAVIS",
+      logoLast: "WRIGHT",
+      links: ["About", "Services", "How I Work"],
+      cta: "Work With Me"
+    },
+
+    hero: {
+      eyebrow: "Brand Advisor — Performance / Outdoor / Sport / Lifestyle",
+      headline: "Advisor to founders building the next great brand.",
+      subhead: "20+ years building, scaling, and operating product-driven brands — from global retail to ground-up startups.",
+      stats: [
+        { num: "8", label: "Years, Founding Team / Chief Product Officer, Ten Thousand" },
+        { num: "1,000+", label: "Products created" },
+        { num: "$1B+", label: "Retail P&L experience across global apparel brands" },
+        { num: "20+", label: "Years across startup & global retail" }
+      ]
+    },
+
+    about: {
+      label: "// About",
+      title: "Product, brand, and commercial strategy — built by someone who's done it from both sides.",
+      paragraphs: [
+        "I spent eight years as a founding team member and Chief Product Officer at Ten Thousand, helping scale the brand from launch to mid eight figures in annual revenue. I partnered closely with the founder and leadership team to shape product strategy, merchandising, brand positioning, and the stories that connected the product to the customer.",
+        "Before that, I spent over a decade in senior merchandising and product roles at Mango, Calvin Klein, and Aeropostale — owning assortments and P&Ls of $300M+ in a high-volume, multi-channel retail environment.",
+        "Today, I advise founders, investors, and growth-stage consumer brands on product strategy, merchandising, positioning, GTM strategy, and the decisions that define how a brand shows up in market.",
+        "I'm especially interested in brands where product, storytelling, and disciplined execution are central to the next phase of growth."
+      ],
+      focusAreas: [
+        "Merchandising & Product Strategy",
+        "Product Creation",
+        "General Mgmt & Business Ops",
+        "Team Leadership & Org Building",
+        "Fundraising Advise & Support",
+        "Product Line Strategy & Execution",
+        "Global Sourcing & Supply Chain",
+        "Systems, Process & Design"
+      ]
+    },
+
+    stagesSection: {
+      label: "// Services by Stage",
+      title: "Built for where your brand is right now — not a one-size playbook.",
+      intro: "Every engagement is scoped to your stage, your team, and the decisions in front of you."
+    },
+
+    stages: [
+      {
+        tag: "Stage 01 / Pre-Seed · Startup",
+        title: "Brand Launch",
+        rangeLabel: "CONCEPT → LAUNCH",
+        scenario: "You have your concept and perhaps some initial work, but you need help bringing the business to life.",
+        goal: "Get your business up and running through financing, systems, and product support.",
+        commitment: "3–6 months · ~4 hrs/week",
+        services: [
+          "Business formation & structure",
+          "Financing advisory & guidance",
+          "Product sourcing",
+          "Product design & development",
+          "Team & advisory board structure",
+          "Production, supply chain & 3PL",
+          "Positioning & market fit",
+          "Sales structure"
+        ]
+      },
+      {
+        tag: "Stage 02 / Early Stage",
+        title: "Brand Structure, Funds & Team",
+        rangeLabel: "$500K – $5M → $10M+",
+        scenario: "Your brand is up and running, doing $500K–$5M in sales. You're ready to bring on strategic team members, partners, and funding to fuel growth toward $10M+.",
+        goal: "Strengthen your organizational structure, funding, and sales channels.",
+        commitment: "6 months · ~4–10 hrs/week",
+        services: [
+          "Financing advisory & guidance",
+          "Team structure & recruiting",
+          "Assortment & positioning",
+          "Sourcing & counter-sourcing",
+          "Marketing & storytelling",
+          "Wear-testing & customer feedback",
+          "Planning systems & reporting",
+          "Advisory board formation"
+        ]
+      },
+      {
+        tag: "Stage 03 / Growth Stage",
+        title: "Scaling & Growing",
+        rangeLabel: "$10M+ → RAPID GROWTH",
+        scenario: "Your brand has passed $10M and is growing quickly. You're moving fast and need help scaling your team, tightening your organization, and securing the right funding.",
+        goal: "Put the right team, processes, and funding in place to support a rapidly growing business.",
+        commitment: "6–18 months · ~4–10 hrs/week",
+        services: [
+          "Financing advisory & guidance",
+          "Team structure & recruiting",
+          "Operational optimization",
+          "Cost engineering & counter-sourcing",
+          "Marketing & storytelling",
+          "Planning systems & reporting",
+          "Sales channel optimization",
+          "General business advisory"
+        ]
+      },
+      {
+        tag: "Stage 04 / Scaled Growth",
+        title: "Expansion",
+        rangeLabel: "$30M+ → $100M+",
+        scenario: "Your brand has passed $30M and is a major player in your space. Moving to the next stage requires a new set of distribution, assortment, and partners.",
+        goal: "Expand distribution, product assortment, and partnerships to open the right channels for your next stage.",
+        commitment: "6–18 months · ~4–10 hrs/week",
+        services: [
+          "Assortment & positioning",
+          "Distribution expansion",
+          "International expansion",
+          "New category / sub-brand creation",
+          "Partnerships & collaborations",
+          "Cost engineering",
+          "Operational optimization",
+          "General business advisory"
+        ]
+      }
+    ],
+
+    extraSection: {
+      label: "// Additional Services",
+      title: "When things don't follow the standard playbook."
+    },
+
+    extras: [
+      {
+        num: "01",
+        title: "Stalled Brands",
+        body: "Sometimes things don't go as planned and you need a strategic reset — a new financing partner, a product rethink, or an operations overhaul. I build custom solutions to reset your goals and get you back on track."
+      },
+      {
+        num: "02",
+        title: "Interim Operator",
+        body: "Sudden team departures, organizational changes, and new opportunities sometimes call for an interim operator to fill the gap while you figure out your next step."
+      },
+      {
+        num: "03",
+        title: "Fractional & Board",
+        body: "Strategic leadership, mentorship, and board-level advising are available for brands that need ongoing high-level counsel."
+      }
+    ],
+
+    howSection: {
+      label: "// How I Work",
+      title: "A monthly retainer, scoped to your stage and needs.",
+      columns: [
+        {
+          heading: "Getting Started",
+          paragraphs: [
+            "Before anything is formalized, we'll have a few exploratory conversations — enough for both of us to understand the opportunity, the challenges you're facing, and whether we're a good fit to work together.",
+            "Real diagnostic work — auditing your business, assessing your team and processes, and building a prioritized roadmap — happens once an engagement begins. Doing this work well takes real time and judgment, and treating it as part of the paid engagement keeps the process honest and focused for both of us."
+          ]
+        },
+        {
+          heading: "Once We're Working Together",
+          paragraphs: [
+            "We'll agree on a clearly defined scope, a regular weekly or biweekly cadence, and a time commitment that matches your stage. From there, it's a mix of working sessions, async input, and hands-on execution.",
+            "Scope and hours can flex as your needs change, but always by mutual agreement — no surprise increases, no scope creep without a conversation first."
+          ]
+        }
+      ]
+    },
+
+    workSection: {
+      label: "// Work With Me",
+      title: "Let's see if it's a fit.",
+      intro: "Tell me a bit about your business and what you're working on. I read every submission myself, and if it looks like a good fit, I'll follow up directly to set up a conversation.",
+      formPlaceholder: "[ Vetting questionnaire embeds here ]",
+      secondaryPrefix: "Already confident this is a fit and just want to grab time?",
+      secondaryLinkText: "Book a call directly →",
+      secondaryLinkUrl: "https://calendly.com/travis-traviswright/30min"
+    },
+
+    footer: {
+      left: "TRAVIS WRIGHT ADVISORY",
+      right: "San Diego, CA"
+    }
+
+  };
+</script>
+<!-- ============== END OF EDITABLE TEXT — DESIGN CODE BELOW ============== -->
+
+<style>
+  :root {
+    --bg: #EBEAE8;
+    --bg-alt: #E0DEDA;
+    --accent: #C07A35;
+    --accent-dark: #9C5F26;
+    --ink: #1A1A1A;
+    --muted: #7A7670;
+    --white: #FFFFFF;
+    --line: #C9C6C0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .display {
+    font-family: 'Archivo Black', 'Arial Black', sans-serif;
+    letter-spacing: -0.01em;
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+
+  .mono {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    letter-spacing: 0.02em;
+  }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- NAV ---------- */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+  }
+  .nav-logo {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links li { display: inline-block; }
+  .nav-links a {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    color: var(--ink);
+    transition: color 0.15s ease;
+    white-space: nowrap;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .nav-cta:hover { background: var(--accent); }
+
+  @media (max-width: 760px) {
+    .nav-links { display: none; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    padding: 100px 0 80px;
+    border-bottom: 4px solid var(--ink);
+  }
+  .hero-eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent-dark);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    width: 28px;
+    height: 3px;
+    background: var(--accent);
+    display: inline-block;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 6.5vw, 76px);
+    max-width: 880px;
+    margin-bottom: 28px;
+  }
+  .hero-sub {
+    font-size: 19px;
+    color: var(--muted);
+    max-width: 560px;
+    margin-bottom: 48px;
+  }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+  }
+  .stat {
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 24px 20px;
+  }
+  .stat-num {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 34px;
+    color: var(--accent-dark);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    font-weight: 600;
+  }
+  @media (max-width: 760px) {
+    .hero { padding: 64px 0 48px; }
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ---------- SECTION SCAFFOLDING ---------- */
+  section { padding: 88px 0; }
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--accent-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-size: clamp(28px, 4vw, 44px);
+    max-width: 700px;
+    margin-bottom: 20px;
+  }
+  .section-intro {
+    font-size: 17px;
+    color: var(--muted);
+    max-width: 620px;
+    margin-bottom: 56px;
+  }
+
+  .alt-bg { background: var(--bg-alt); }
+
+  /* ---------- ABOUT ---------- */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .about-grid p {
+    margin-bottom: 18px;
+    font-size: 16.5px;
+  }
+  .about-grid p:last-of-type { margin-bottom: 0; }
+
+  .focus-list { display: flex; flex-direction: column; gap: 2px; }
+  .focus-item {
+    background: var(--accent);
+    color: var(--white);
+    padding: 16px 20px;
+    font-size: 14.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .focus-item::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--white);
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 760px) {
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ---------- SPEC SHEET STAGE CARDS ---------- */
+  .stage-card {
+    border: 2px solid var(--ink);
+    margin-bottom: 28px;
+    background: var(--bg);
+  }
+  .stage-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    padding: 24px 28px;
+    border-bottom: 2px solid var(--ink);
+    background: var(--ink);
+    color: var(--bg);
+  }
+  .stage-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+  .stage-head h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    line-height: 1.05;
+  }
+  .stage-rev {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--bg);
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+
+  .stage-body { padding: 28px; }
+
+  .spec-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .spec-row:last-child { border-bottom: none; }
+  .spec-key {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-dark);
+    font-weight: 700;
+    padding-top: 2px;
+  }
+  .spec-val { font-size: 15px; }
+  .spec-val.tight { font-size: 14.5px; color: var(--muted); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 24px;
+    margin-top: 4px;
+  }
+  .services-grid div {
+    font-size: 14px;
+    padding-left: 16px;
+    position: relative;
+  }
+  .services-grid div::before {
+    content: '/';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  @media (max-width: 760px) {
+    .stage-head { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .stage-rev { text-align: left; }
+    .spec-row { grid-template-columns: 1fr; gap: 4px; }
+    .services-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- ADDITIONAL SERVICES ---------- */
+  .extra-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--ink);
+  }
+  .extra-card {
+    background: var(--bg);
+    padding: 32px 28px;
+  }
+  .extra-card .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--accent-dark);
+    margin-bottom: 16px;
+  }
+  .extra-card h4 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .extra-card p { font-size: 14.5px; color: var(--muted); }
+
+  @media (max-width: 760px) {
+    .extra-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- HOW I WORK ---------- */
+  .work-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+  .work-col {
+    border-left: 3px solid var(--accent);
+    padding-left: 24px;
+  }
+  .work-col h4 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .work-col p { font-size: 15px; color: var(--ink); margin-bottom: 14px; }
+  .work-col p:last-child { margin-bottom: 0; }
+
+  @media (max-width: 760px) {
+    .work-cols { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  /* ---------- WORK WITH ME ---------- */
+  .cta-section {
+    background: var(--ink);
+    color: var(--bg);
+    text-align: center;
+    padding: 100px 0;
+  }
+  .cta-section .section-label { color: var(--accent); justify-content: center; }
+  .cta-section h2 {
+    color: var(--bg);
+    font-size: clamp(30px, 5vw, 52px);
+    margin: 0 auto 20px;
+    max-width: 700px;
+  }
+  .cta-section .section-intro { color: #B8B5AF; margin: 0 auto 40px; }
+
+  .form-placeholder {
+    max-width: 560px;
+    margin: 0 auto 32px;
+    border: 2px dashed #4A4742;
+    padding: 48px 32px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: #8A8680;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .primary-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--white);
+    padding: 18px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    margin-bottom: 28px;
+    transition: background 0.15s ease;
+  }
+  .primary-btn:hover { background: #D98C40; }
+
+  .secondary-link {
+    font-size: 14px;
+    color: #B8B5AF;
+  }
+  .secondary-link a {
+    color: var(--bg);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--line);
+  }
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer .mono { font-size: 12px; }
+
+  @media (max-width: 760px) {
+    footer .wrap { flex-direction: column; gap: 12px; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="nav-logo" id="nav-logo"></div>
+    <ul class="nav-links" id="nav-links"></ul>
+    <a href="#work" class="nav-cta" id="nav-cta"></a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow" id="hero-eyebrow"></div>
+    <h1 class="display" id="hero-headline"></h1>
+    <p class="hero-sub" id="hero-subhead"></p>
+    <div class="hero-stats" id="hero-stats"></div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-label" id="about-label"></div>
+    <h2 class="section-title" id="about-title"></h2>
+    <div class="about-grid">
+      <div id="about-paragraphs"></div>
+      <div class="focus-list" id="focus-list"></div>
+    </div>
+  </div>
+</section>
+
+<section id="stages" class="alt-bg">
+  <div class="wrap">
+    <div class="section-label" id="stages-label"></div>
+    <h2 class="section-title" id="stages-title"></h2>
+    <p class="section-intro" id="stages-intro"></p>
+    <div id="stage-cards"></div>
+  </div>
+</section>
+
+<section id="extra">
+  <div class="wrap">
+    <div class="section-label" id="extra-label"></div>
+    <h2 class="section-title" id="extra-title"></h2>
+  </div>
+  <div class="extra-grid" id="extra-grid"></div>
+</section>
+
+<section id="how" class="alt-bg">
+  <div class="wrap">
+    <div class="section-label" id="how-label"></div>
+    <h2 class="section-title" id="how-title"></h2>
+    <div class="work-cols" id="work-cols"></div>
+  </div>
+</section>
+
+<section id="work" class="cta-section">
+  <div class="wrap">
+    <div class="section-label" id="work-label"></div>
+    <h2 id="work-title"></h2>
+    <p class="section-intro" id="work-intro"></p>
+    <div class="form-placeholder" id="form-placeholder"></div>
+    <div class="secondary-link" id="secondary-link"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="mono" id="footer-left"></div>
+    <div id="footer-right"></div>
+  </div>
+</footer>
+
+<script>
+  // This script reads SITE_CONTENT (defined at the top of the file)
+  // and fills in all the text on the page. You shouldn't need to
+  // edit anything below this line to change words on the site —
+  // only edit the SITE_CONTENT object near the top of the file.
+
+  const esc = (str) => {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  };
+
+  // Nav
+  document.getElementById('nav-logo').innerHTML =
+    `${esc(SITE_CONTENT.nav.logoFirst)}<span>.</span>${esc(SITE_CONTENT.nav.logoLast)}`;
+  document.getElementById('nav-links').innerHTML = SITE_CONTENT.nav.links
+    .map((label, i) => {
+      const targets = ['#about', '#stages', '#how'];
+      return `<li><a href="${targets[i] || '#'}">${esc(label)}</a></li>`;
+    }).join('');
+  document.getElementById('nav-cta').textContent = SITE_CONTENT.nav.cta;
+
+  // Hero
+  document.getElementById('hero-eyebrow').textContent = SITE_CONTENT.hero.eyebrow;
+  document.getElementById('hero-headline').textContent = SITE_CONTENT.hero.headline;
+  document.getElementById('hero-subhead').textContent = SITE_CONTENT.hero.subhead;
+  document.getElementById('hero-stats').innerHTML = SITE_CONTENT.hero.stats.map(s => `
+    <div class="stat">
+      <div class="stat-num mono">${esc(s.num)}</div>
+      <div class="stat-label">${esc(s.label)}</div>
+    </div>
+  `).join('');
+
+  // About
+  document.getElementById('about-label').textContent = SITE_CONTENT.about.label;
+  document.getElementById('about-title').textContent = SITE_CONTENT.about.title;
+  document.getElementById('about-paragraphs').innerHTML = SITE_CONTENT.about.paragraphs
+    .map(p => `<p>${esc(p)}</p>`).join('');
+  document.getElementById('focus-list').innerHTML = SITE_CONTENT.about.focusAreas
+    .map(f => `<div class="focus-item">${esc(f)}</div>`).join('');
+
+  // Stages section header
+  document.getElementById('stages-label').textContent = SITE_CONTENT.stagesSection.label;
+  document.getElementById('stages-title').textContent = SITE_CONTENT.stagesSection.title;
+  document.getElementById('stages-intro').textContent = SITE_CONTENT.stagesSection.intro;
+
+  // Stage cards
+  document.getElementById('stage-cards').innerHTML = SITE_CONTENT.stages.map(s => `
+    <div class="stage-card">
+      <div class="stage-head">
+        <div>
+          <div class="stage-tag">${esc(s.tag)}</div>
+          <h3>${esc(s.title)}</h3>
+        </div>
+        <div class="stage-rev">${esc(s.rangeLabel)}</div>
+      </div>
+      <div class="stage-body">
+        <div class="spec-row">
+          <div class="spec-key">Scenario</div>
+          <div class="spec-val">${esc(s.scenario)}</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-key">Goal</div>
+          <div class="spec-val">${esc(s.goal)}</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-key">Commitment</div>
+          <div class="spec-val tight">${esc(s.commitment)}</div>
+        </div>
+        <div class="spec-row">
+          <div class="spec-key">Services</div>
+          <div class="spec-val">
+            <div class="services-grid">
+              ${s.services.map(item => `<div>${esc(item)}</div>`).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  // Additional services
+  document.getElementById('extra-label').textContent = SITE_CONTENT.extraSection.label;
+  document.getElementById('extra-title').textContent = SITE_CONTENT.extraSection.title;
+  document.getElementById('extra-grid').innerHTML = SITE_CONTENT.extras.map(e => `
+    <div class="extra-card">
+      <div class="num mono">${esc(e.num)}</div>
+      <h4>${esc(e.title)}</h4>
+      <p>${esc(e.body)}</p>
+    </div>
+  `).join('');
+
+  // How I work
+  document.getElementById('how-label').textContent = SITE_CONTENT.howSection.label;
+  document.getElementById('how-title').textContent = SITE_CONTENT.howSection.title;
+  document.getElementById('work-cols').innerHTML = SITE_CONTENT.howSection.columns.map(col => `
+    <div class="work-col">
+      <h4>${esc(col.heading)}</h4>
+      ${col.paragraphs.map(p => `<p>${esc(p)}</p>`).join('')}
+    </div>
+  `).join('');
+
+  // Work with me / CTA
+  document.getElementById('work-label').textContent = SITE_CONTENT.workSection.label;
+  document.getElementById('work-title').textContent = SITE_CONTENT.workSection.title;
+  document.getElementById('work-intro').textContent = SITE_CONTENT.workSection.intro;
+  document.getElementById('form-placeholder').textContent = SITE_CONTENT.workSection.formPlaceholder;
+  document.getElementById('secondary-link').innerHTML =
+    `${esc(SITE_CONTENT.workSection.secondaryPrefix)} <a href="${SITE_CONTENT.workSection.secondaryLinkUrl}">${esc(SITE_CONTENT.workSection.secondaryLinkText)}</a>`;
+
+  // Footer
+  document.getElementById('footer-left').textContent = SITE_CONTENT.footer.left;
+  document.getElementById('footer-right').textContent = SITE_CONTENT.footer.right;
+</script>
+
+</body>
+</html>
