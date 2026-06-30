@@ -41,9 +41,8 @@
     },
 
     hero: {
-      eyebrow: "Brand Advisor — Performance / Outdoor / Sport / Lifestyle",
+      eyebrow: "Performance / Outdoor / Sport / Lifestyle",
       headline: "Advisor to founders building the next great brand.",
-      subhead: "20+ years building, scaling, and operating product-driven brands — from global retail to ground-up startups.",
       stats: [
         { num: "8", label: "Years, Founding Team / Chief Product Officer, Ten Thousand" },
         { num: "1,000+", label: "Products created" },
@@ -301,8 +300,8 @@
   }
   .nav-links a:hover { color: var(--accent); }
   .nav-cta {
-    background: var(--ink);
-    color: var(--bg);
+    background: var(--accent);
+    color: var(--white);
     padding: 10px 20px;
     font-size: 13px;
     font-weight: 700;
@@ -311,7 +310,7 @@
     text-decoration: none;
     transition: background 0.15s ease;
   }
-  .nav-cta:hover { background: var(--accent); }
+  .nav-cta:hover { background: var(--accent-dark); }
 
   @media (max-width: 760px) {
     .nav-links { display: none; }
@@ -319,7 +318,7 @@
 
   /* ---------- HERO ---------- */
   .hero {
-    padding: 100px 0 80px;
+    padding: 64px 0 80px;
     border-bottom: 4px solid var(--ink);
   }
   .hero-eyebrow {
@@ -360,14 +359,18 @@
   .stat {
     border-right: 1px solid var(--line);
     border-bottom: 1px solid var(--line);
-    padding: 24px 20px;
+    padding: 20px 20px 24px;
+    display: flex;
+    flex-direction: column;
   }
   .stat-num {
     font-family: 'Archivo Black', sans-serif;
     font-size: 34px;
     color: var(--accent-dark);
     line-height: 1;
-    margin-bottom: 8px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-top: 2px solid var(--accent);
   }
   .stat-label {
     font-size: 12px;
@@ -669,7 +672,6 @@
   <div class="wrap">
     <div class="hero-eyebrow" id="hero-eyebrow"></div>
     <h1 class="display" id="hero-headline"></h1>
-    <p class="hero-sub" id="hero-subhead"></p>
     <div class="hero-stats" id="hero-stats"></div>
   </div>
 </header>
@@ -752,7 +754,6 @@
   // Hero
   document.getElementById('hero-eyebrow').textContent = SITE_CONTENT.hero.eyebrow;
   document.getElementById('hero-headline').textContent = SITE_CONTENT.hero.headline;
-  document.getElementById('hero-subhead').textContent = SITE_CONTENT.hero.subhead;
   document.getElementById('hero-stats').innerHTML = SITE_CONTENT.hero.stats.map(s => `
     <div class="stat">
       <div class="stat-num mono">${esc(s.num)}</div>
