@@ -36,12 +36,12 @@
     nav: {
       logoFirst: "TRAVIS",
       logoLast: "WRIGHT",
+      tagline: "performance · outdoor · sport · lifestyle",
       links: ["About", "Services", "How I Work"],
       cta: "Work With Me"
     },
 
     hero: {
-      eyebrow: "Performance / Outdoor / Sport / Lifestyle",
       headline: "Advisor to founders building the next great brand.",
       stats: [
         { num: "8", label: "Years, Founding Team / Chief Product Officer, Ten Thousand" },
@@ -118,7 +118,7 @@
       {
         tag: "Stage 03 / Growth Stage",
         title: "Scaling & Growing",
-        rangeLabel: "$10M+ → RAPID GROWTH",
+        rangeLabel: "$10M+ → $30M",
         scenario: "Your brand has passed $10M and is growing quickly. You're moving fast and need help scaling your team, tightening your organization, and securing the right funding.",
         goal: "Put the right team, processes, and funding in place to support a rapidly growing business.",
         commitment: "6–18 months · ~4–10 hrs/week",
@@ -200,7 +200,7 @@
     workSection: {
       label: "// Work With Me",
       title: "Let's see if it's a fit.",
-      intro: "Tell me a bit about your business and what you're working on. I read every submission myself, and if it looks like a good fit, I'll follow up directly to set up a conversation.",
+      intro: "Tell me a bit about your business and what you're working on. I read every submission and follow up to every directly myself to set up a conversation.",
       formPlaceholder: "[ Vetting questionnaire embeds here ]",
       secondaryPrefix: "Already confident this is a fit and just want to grab time?",
       secondaryLinkText: "Book a call directly →",
@@ -273,13 +273,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 72px;
+    height: 84px;
   }
+  .nav-logo-block { display: flex; flex-direction: column; gap: 10px; }
   .nav-logo {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 18px;
+    font-size: 19px;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    line-height: 1;
+  }
+  .nav-tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1;
   }
   .nav-logo span { color: var(--accent); }
   .nav-links {
@@ -662,7 +672,10 @@
 
 <nav>
   <div class="wrap">
-    <div class="nav-logo" id="nav-logo"></div>
+    <div class="nav-logo-block">
+      <div class="nav-logo" id="nav-logo"></div>
+      <div class="nav-tagline" id="nav-tagline"></div>
+    </div>
     <ul class="nav-links" id="nav-links"></ul>
     <a href="#work" class="nav-cta" id="nav-cta"></a>
   </div>
@@ -670,7 +683,6 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="hero-eyebrow" id="hero-eyebrow"></div>
     <h1 class="display" id="hero-headline"></h1>
     <div class="hero-stats" id="hero-stats"></div>
   </div>
@@ -744,6 +756,7 @@
   // Nav
   document.getElementById('nav-logo').innerHTML =
     `${esc(SITE_CONTENT.nav.logoFirst)}<span>.</span>${esc(SITE_CONTENT.nav.logoLast)}`;
+  document.getElementById('nav-tagline').textContent = SITE_CONTENT.nav.tagline;
   document.getElementById('nav-links').innerHTML = SITE_CONTENT.nav.links
     .map((label, i) => {
       const targets = ['#about', '#stages', '#how'];
@@ -752,7 +765,6 @@
   document.getElementById('nav-cta').textContent = SITE_CONTENT.nav.cta;
 
   // Hero
-  document.getElementById('hero-eyebrow').textContent = SITE_CONTENT.hero.eyebrow;
   document.getElementById('hero-headline').textContent = SITE_CONTENT.hero.headline;
   document.getElementById('hero-stats').innerHTML = SITE_CONTENT.hero.stats.map(s => `
     <div class="stat">
