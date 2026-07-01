@@ -37,6 +37,7 @@
       logoFirst: "TRAVIS",
       logoLast: "WRIGHT",
       tagline: "performance · outdoor · sport · lifestyle",
+      taglineMobile: "performance · outdoor · lifestyle",
       links: ["About", "Services", "How I Work"],
       cta: "Work With Me"
     },
@@ -44,9 +45,9 @@
     hero: {
       headline: "Advisor to founders building the next great brand.",
       stats: [
-        { num: "8", label: "Years, Founding Team / Chief Product Officer, Ten Thousand" },
-        { num: "1,000+", label: "Products created" },
         { num: "$1B+", label: "Retail P&L experience across global apparel brands" },
+        { num: "1,000+", label: "Products created" },
+        { num: "8", label: "Years on the Founding Team, Ten Thousand" },
         { num: "20+", label: "Years across startup & global retail" }
       ]
     },
@@ -291,6 +292,7 @@
     text-transform: uppercase;
     line-height: 1;
   }
+  .nav-tagline-mobile { display: none; }
   .nav-logo span { color: var(--accent); }
   .nav-links {
     display: flex;
@@ -324,11 +326,15 @@
 
   @media (max-width: 760px) {
     .nav-links { display: none; }
+    .nav-tagline-desktop { display: none; }
+    .nav-tagline-mobile { display: block; font-size: 8.5px; letter-spacing: 0.01em; }
+    nav .wrap { height: 64px; }
+    .nav-cta { padding: 10px 14px; font-size: 11px; letter-spacing: 0.04em; white-space: nowrap; }
   }
 
   /* ---------- HERO ---------- */
   .hero {
-    padding: 64px 0 80px;
+    padding: 40px 0 80px;
     border-bottom: 4px solid var(--ink);
   }
   .hero-eyebrow {
@@ -674,7 +680,8 @@
   <div class="wrap">
     <div class="nav-logo-block">
       <div class="nav-logo" id="nav-logo"></div>
-      <div class="nav-tagline" id="nav-tagline"></div>
+      <div class="nav-tagline nav-tagline-desktop" id="nav-tagline"></div>
+      <div class="nav-tagline nav-tagline-mobile" id="nav-tagline-mobile"></div>
     </div>
     <ul class="nav-links" id="nav-links"></ul>
     <a href="#work" class="nav-cta" id="nav-cta"></a>
@@ -757,6 +764,7 @@
   document.getElementById('nav-logo').innerHTML =
     `${esc(SITE_CONTENT.nav.logoFirst)}<span>.</span>${esc(SITE_CONTENT.nav.logoLast)}`;
   document.getElementById('nav-tagline').textContent = SITE_CONTENT.nav.tagline;
+  document.getElementById('nav-tagline-mobile').textContent = SITE_CONTENT.nav.taglineMobile;
   document.getElementById('nav-links').innerHTML = SITE_CONTENT.nav.links
     .map((label, i) => {
       const targets = ['#about', '#stages', '#how'];
