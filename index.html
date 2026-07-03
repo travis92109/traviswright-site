@@ -41,9 +41,15 @@
   4. After editing, just open the file in a browser to check
      it still looks right before using it live.
 
-  Everything below this comment block (the <style> and the
-  HTML layout) controls how the site LOOKS, not what it SAYS.
-  You shouldn't need to touch any of that for a text change.
+  NOTE ON THE STATIC TEXT LOWER IN THIS FILE:
+  The HTML body below also contains a static copy of all the
+  text. This exists so search engines, AI tools, and link
+  previews (which often don't run JavaScript) can read the
+  site. The SITE_CONTENT block above always wins for human
+  visitors — the script overwrites the static text on load.
+  If you edit SITE_CONTENT yourself, visitors see your change
+  immediately; the static copy just becomes slightly stale
+  for crawlers until it's re-synced (fine for small edits).
   ============================================================
 -->
 <script>
@@ -63,7 +69,7 @@
       stats: [
         { num: "$1B+", label: "Retail P&L experience across global apparel brands" },
         { num: "1,000+", label: "Products created" },
-        { num: "8", label: "Years Founding Team, Ten Thousand" },
+        { num: "8", label: "Years on the Founding Team, Ten Thousand" },
         { num: "20+", label: "Years across startup & global retail" }
       ]
     },
@@ -83,7 +89,7 @@
         "Product Creation",
         "Brand Positioning & Storytelling",
         "Go-to-Market Strategy",
-        "Fundraising Advise & Support",
+        "Fundraising Advice & Support",
         "General Mgmt & Business Ops",
         "Retail Planning",
         "Product Sourcing & Supply Chain",
@@ -718,73 +724,192 @@
 <nav>
   <div class="wrap">
     <div class="nav-logo-block">
-      <div class="nav-logo" id="nav-logo"></div>
-      <div class="nav-tagline nav-tagline-desktop" id="nav-tagline"></div>
-      <div class="nav-tagline nav-tagline-mobile" id="nav-tagline-mobile"></div>
+      <div class="nav-logo" id="nav-logo">TRAVIS<span>.</span>WRIGHT</div>
+      <div class="nav-tagline nav-tagline-desktop" id="nav-tagline">performance · outdoor · sport · lifestyle</div>
+      <div class="nav-tagline nav-tagline-mobile" id="nav-tagline-mobile">performance · outdoor · lifestyle</div>
     </div>
-    <ul class="nav-links" id="nav-links"></ul>
-    <a href="#work" class="nav-cta" id="nav-cta"></a>
+    <ul class="nav-links" id="nav-links"><li><a href="#about">About</a></li><li><a href="#stages">Services</a></li><li><a href="#how">How I Work</a></li></ul>
+    <a href="#work" class="nav-cta" id="nav-cta">Let's Work Together</a>
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap">
-    <h1 class="display" id="hero-headline"></h1>
-    <div class="hero-stats" id="hero-stats"></div>
+    <h1 class="display" id="hero-headline">Advisor to founders building the next great brand.</h1>
+    <div class="hero-stats" id="hero-stats">
+      <div class="stat"><div class="stat-num mono">$1B+</div><div class="stat-label">Retail P&amp;L experience across global apparel brands</div></div>
+      <div class="stat"><div class="stat-num mono">1,000+</div><div class="stat-label">Products created</div></div>
+      <div class="stat"><div class="stat-num mono">8</div><div class="stat-label">Years Founding Team, Ten Thousand</div></div>
+      <div class="stat"><div class="stat-num mono">20+</div><div class="stat-label">Years across startup &amp; global retail</div></div>
+    </div>
   </div>
 </header>
 
 <section id="about">
   <div class="wrap">
-    <div class="section-label" id="about-label"></div>
-    <h2 class="section-title" id="about-title"></h2>
+    <div class="section-label" id="about-label">// About</div>
+    <h2 class="section-title" id="about-title">Product, brand, and commercial strategy — built by someone who's done it.</h2>
     <div class="about-grid">
-      <div id="about-paragraphs"></div>
-      <div class="focus-list" id="focus-list"></div>
+      <div id="about-paragraphs">
+        <p>As part of the founding team and Chief Product Officer at Ten Thousand, I helped take the brand from zero to mid eight figures in annual revenue over eight years. I owned product strategy, merchandising, and brand positioning, and built the systems, team, and story that carried the company through every stage of that growth.</p>
+        <p>Before that, I spent over a decade in senior merchandising and product roles at Mango, Calvin Klein, and Aeropostale — owning assortments and P&amp;Ls of $1B+ in a high-volume, multi-channel retail environment.</p>
+        <p>Today, I advise founders, investors, and growth-stage consumer brands on product strategy, merchandising, positioning, GTM strategy, and the decisions that define how a brand shows up in market.</p>
+        <p>I live the lifestyle these brands are built for: surfing, HIIT, running, hiking, soccer, yoga, and whatever else keeps me moving. Constantly active, always in it, not just advising from the outside. I'm not guessing at what your customer wants; I am the customer.</p>
+        <p>I work best with founders and teams who are serious about building something real, where product, storytelling, and disciplined execution aren't optional; they're the whole point.</p>
+      </div>
+      <div class="focus-list" id="focus-list">
+        <div class="focus-item">Merchandising &amp; Product Strategy</div>
+        <div class="focus-item">Product Creation</div>
+        <div class="focus-item">Brand Positioning &amp; Storytelling</div>
+        <div class="focus-item">Go-to-Market Strategy</div>
+        <div class="focus-item">Fundraising Advice &amp; Support</div>
+        <div class="focus-item">General Mgmt &amp; Business Ops</div>
+        <div class="focus-item">Retail Planning</div>
+        <div class="focus-item">Product Sourcing &amp; Supply Chain</div>
+        <div class="focus-item">Board &amp; Advisory Formation</div>
+        <div class="focus-item">Production and Product Development</div>
+        <div class="focus-item">Team Structure &amp; Recruiting</div>
+      </div>
     </div>
   </div>
 </section>
 
 <section id="stages" class="alt-bg">
   <div class="wrap">
-    <div class="section-label" id="stages-label"></div>
-    <h2 class="section-title" id="stages-title"></h2>
-    <p class="section-intro" id="stages-intro"></p>
-    <div id="stage-cards"></div>
+    <div class="section-label" id="stages-label">// Services by Stage</div>
+    <h2 class="section-title" id="stages-title">Scoped to your stage. Built for what's next.</h2>
+    <p class="section-intro" id="stages-intro">Every engagement is tailored to your stage, your team, and the decisions in front of you.</p>
+    <div id="stage-cards">
+      <div class="stage-card">
+        <div class="stage-head">
+          <div>
+            <div class="stage-tag">Stage 01 / Pre-Seed · Startup</div>
+            <h3>Brand Launch</h3>
+          </div>
+          <div class="stage-rev">CONCEPT → LAUNCH</div>
+        </div>
+        <div class="stage-body">
+          <div class="spec-row"><div class="spec-key">Scenario</div><div class="spec-val">You have your concept and perhaps some initial work, but you need help bringing the business to life.</div></div>
+          <div class="spec-row"><div class="spec-key">Goal</div><div class="spec-val">Get your business up and running through financing, systems, and product support.</div></div>
+          <div class="spec-row"><div class="spec-key">Commitment</div><div class="spec-val tight">3–6 months · ~4 hrs/week</div></div>
+          <div class="spec-row"><div class="spec-key">Services</div><div class="spec-val"><div class="services-grid">
+            <div>Business formation &amp; structure</div><div>Financing advisory &amp; guidance</div><div>Product sourcing</div><div>Product design &amp; development</div><div>Team &amp; advisory board structure</div><div>Production, supply chain &amp; 3PL</div><div>Positioning &amp; market fit</div><div>Sales structure</div>
+          </div></div></div>
+        </div>
+      </div>
+      <div class="stage-card">
+        <div class="stage-head">
+          <div>
+            <div class="stage-tag">Stage 02 / Early Stage</div>
+            <h3>Brand Structure, Funds &amp; Team</h3>
+          </div>
+          <div class="stage-rev">$500K – $5M → $10M+</div>
+        </div>
+        <div class="stage-body">
+          <div class="spec-row"><div class="spec-key">Scenario</div><div class="spec-val">Your brand is up and running, doing $500K–$5M in sales. You're ready to bring on strategic team members, partners, and funding to fuel growth toward $10M+.</div></div>
+          <div class="spec-row"><div class="spec-key">Goal</div><div class="spec-val">Strengthen your organizational structure, funding, and sales channels.</div></div>
+          <div class="spec-row"><div class="spec-key">Commitment</div><div class="spec-val tight">6 months · ~4–10 hrs/week</div></div>
+          <div class="spec-row"><div class="spec-key">Services</div><div class="spec-val"><div class="services-grid">
+            <div>Financing advisory &amp; guidance</div><div>Team structure &amp; recruiting</div><div>Assortment &amp; positioning</div><div>Sourcing &amp; counter-sourcing</div><div>Marketing &amp; storytelling</div><div>Wear-testing &amp; customer feedback</div><div>Planning systems &amp; reporting</div><div>Advisory board formation</div>
+          </div></div></div>
+        </div>
+      </div>
+      <div class="stage-card">
+        <div class="stage-head">
+          <div>
+            <div class="stage-tag">Stage 03 / Growth Stage</div>
+            <h3>Scaling &amp; Growing</h3>
+          </div>
+          <div class="stage-rev">$10M+ → $30M</div>
+        </div>
+        <div class="stage-body">
+          <div class="spec-row"><div class="spec-key">Scenario</div><div class="spec-val">Your brand has passed $10M and is growing quickly. You're moving fast and need help scaling your team, tightening your organization, and securing the right funding.</div></div>
+          <div class="spec-row"><div class="spec-key">Goal</div><div class="spec-val">Put the right team, processes, and funding in place to support a rapidly growing business.</div></div>
+          <div class="spec-row"><div class="spec-key">Commitment</div><div class="spec-val tight">6–18 months · ~4–10 hrs/week</div></div>
+          <div class="spec-row"><div class="spec-key">Services</div><div class="spec-val"><div class="services-grid">
+            <div>Financing advisory &amp; guidance</div><div>Team structure &amp; recruiting</div><div>Operational optimization</div><div>Cost engineering &amp; counter-sourcing</div><div>Marketing &amp; storytelling</div><div>Planning systems &amp; reporting</div><div>Sales channel optimization</div><div>General business advisory</div>
+          </div></div></div>
+        </div>
+      </div>
+      <div class="stage-card">
+        <div class="stage-head">
+          <div>
+            <div class="stage-tag">Stage 04 / Scaled Growth</div>
+            <h3>Expansion</h3>
+          </div>
+          <div class="stage-rev">$30M+ → $100M+</div>
+        </div>
+        <div class="stage-body">
+          <div class="spec-row"><div class="spec-key">Scenario</div><div class="spec-val">Your brand has passed $30M and is a major player in your space. Moving to the next stage requires a new set of distribution, assortment, and partners.</div></div>
+          <div class="spec-row"><div class="spec-key">Goal</div><div class="spec-val">Expand distribution, product assortment, and partnerships to open the right channels for your next stage.</div></div>
+          <div class="spec-row"><div class="spec-key">Commitment</div><div class="spec-val tight">6–18 months · ~4–10 hrs/week</div></div>
+          <div class="spec-row"><div class="spec-key">Services</div><div class="spec-val"><div class="services-grid">
+            <div>Assortment &amp; positioning</div><div>Distribution expansion</div><div>International expansion</div><div>New category / sub-brand creation</div><div>Partnerships &amp; collaborations</div><div>Cost engineering</div><div>Operational optimization</div><div>General business advisory</div>
+          </div></div></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="extra">
   <div class="wrap">
-    <div class="section-label" id="extra-label"></div>
-    <h2 class="section-title" id="extra-title"></h2>
+    <div class="section-label" id="extra-label">// Additional Services</div>
+    <h2 class="section-title" id="extra-title">Deeper engagement, for brands that need it.</h2>
   </div>
-  <div class="extra-grid" id="extra-grid"></div>
+  <div class="extra-grid" id="extra-grid">
+    <div class="extra-card">
+      <div class="num mono">01</div>
+      <h4>Fractional &amp; Board</h4>
+      <p>For brands ready for a long-term strategic partner, I take on fractional executive and board roles, bringing executive level judgment to your leadership team on an ongoing basis.</p>
+    </div>
+    <div class="extra-card">
+      <div class="num mono">02</div>
+      <h4>Stalled Brands</h4>
+      <p>Sometimes things don't go as planned and you need a strategic reset — a new financing partner, a product rethink, or an operations overhaul. I build custom solutions to reset your goals and get you back on track.</p>
+    </div>
+    <div class="extra-card">
+      <div class="num mono">03</div>
+      <h4>Interim Operator</h4>
+      <p>Sudden team departures, organizational changes, and new opportunities sometimes call for an interim operator to fill the gap while you figure out your next step.</p>
+    </div>
+  </div>
 </section>
 
 <section id="how" class="alt-bg">
   <div class="wrap">
-    <div class="section-label" id="how-label"></div>
-    <h2 class="section-title" id="how-title"></h2>
-    <div class="work-cols" id="work-cols"></div>
+    <div class="section-label" id="how-label">// How I Work</div>
+    <h2 class="section-title" id="how-title">A monthly retainer, scoped to your stage and needs.</h2>
+    <div class="work-cols" id="work-cols">
+      <div class="work-col">
+        <h4>Getting Started</h4>
+        <p>Before anything is formalized, we'll have a few exploratory conversations — enough for both of us to understand the opportunity, the challenges you're facing, and whether we're a good fit to work together.</p>
+        <p>Real diagnostic work — auditing your business, assessing your team and processes, and building a prioritized roadmap — is where the engagement begins. It's where I dig in, get specific, and build a plan that actually fits your business.</p>
+      </div>
+      <div class="work-col">
+        <h4>Once We're Working Together</h4>
+        <p>We'll agree on a clearly defined scope, a regular weekly or biweekly cadence, and a time commitment that matches your stage. From there, it's a mix of working sessions, async input, and hands-on execution.</p>
+        <p>Working on retainer means I can flex where I spend time as your priorities shift week to week, more hands-on during a critical push, more advisory during steady periods.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section id="work" class="cta-section">
   <div class="wrap">
-    <div class="section-label" id="work-label"></div>
-    <h2 id="work-title"></h2>
-    <p class="section-intro" id="work-intro"></p>
+    <div class="section-label" id="work-label">// Contact</div>
+    <h2 id="work-title">Let's Work Together.</h2>
+    <p class="section-intro" id="work-intro">A few quick questions to get to know each other. I read every submission personally and will be in touch within a few days.</p>
     <a href="https://tally.so/r/b5DEae" target="_blank" class="primary-btn">Tell Me About Your Brand →</a>
-    <div class="secondary-link" id="secondary-link"></div>
+    <div class="secondary-link" id="secondary-link">Already confident this is a fit and just want to grab time? <a href="https://calendly.com/travis-traviswright/30min">Book a call directly →</a></div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="mono" id="footer-left"></div>
+    <div class="mono" id="footer-left">TRAVIS WRIGHT ADVISORY</div>
     <div class="footer-right">
-      <div id="footer-right"></div>
+      <div id="footer-right">San Diego, CA</div>
       <a href="mailto:travis@traviswright.cc" class="linkedin-link" aria-label="Email">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 4h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01L12 13l10-6.99V6H2zm20 2.24l-9.42 6.6a1 1 0 01-1.16 0L2 8.24V18h20V8.24z"/></svg>
       </a>
